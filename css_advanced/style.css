@@ -1,0 +1,130 @@
+header {
+  /* align-items: center;
+background: radial-gradient(circle, rgba(0, 0, 0, 2), rgba(255, 255, 255, 2));
+  background-color: #071629; /* fallback for old browsers or outside the gradient */
+}
+
+body {
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: radial-gradient(
+    circle at center,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background-color: #071629; /* fallback for old browsers or outside the gradient */
+}
+
+.nav-links {
+  overflow: hidden;
+  list-style-type: none;
+  flex-direction: row-reverse;
+  display: flex;
+  margin: 0;
+  margin-right: 100px;
+  gap: 20px;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+.logo {
+  height: 30px;
+  margin-left: 100px;
+}
+
+.hero-section {
+  background: radial-gradient(
+    circle at center,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background-color: #000; /* fallback for old browsers or outside the gradient */
+  position: relative;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%; /* Only cover top 60% of the section */
+  width: 100%;
+  background-image: url("/Object.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.6; /* optional: adjust image visibility */
+  z-index: 1;
+}
+
+.hero-wrapper {
+  position: relative;
+  background-color: #000; /* fallback color */
+  overflow: hidden;
+}
+
+.hero-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60%; /* Only cover top 60% of the hero-wrapper */
+  background-image: url('/Object.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  opacity: 0.6; /* optional */
+}
+
+.header,
+.hero-main {
+  position: relative;
+  z-index: 2; /* make sure content is above background image */
+}
+
+section .one {
+  background: radial-gradient(
+    circle at center,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background-color: #071629; /* fallback for old browsers or outside the gradient */
+}
+
+.presenter {
+  display: flex;
+  align-items: center;
+  margin: 30px auto;
+  gap: 50px;
+  padding: 30px;
+  background-color: #c271ff;
+}
+.weather img {
+  width: 150px;
+  border-radius: 8px;
+  height: auto;
+  margin-left: 90px;
+}
+.quote blockquote {
+  margin: 0 0 10px;
+  line-height: 1.5;
+  color: #ffffff;
+}
+.quote h3 {
+  margin: 0;
+  color: #ffffff;
+}
+.quote p {
+  margin: 0px;
+  color: #ffffff;
+}
